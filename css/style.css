@@ -8,6 +8,10 @@ basics
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -29,6 +33,10 @@ img {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /********************
@@ -107,11 +115,11 @@ intro
 /********************
 accents
 ********************/
-.accents {
+.accents, .warranty {
   background: #59B7B4;
   padding: 70px 0;
 }
-.accents p {
+.accents p, .warranty p {
   color: #2F2F2F;
 }
 
@@ -190,8 +198,8 @@ benefits
 .benefits article div li {
   color: #59B7B4;
   margin-bottom: 20px;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 500;
 }
 .benefits article div li::before {
   content: "";
@@ -203,9 +211,85 @@ benefits
   display: inline-block;
   margin-right: 20px;
   line-height: 8px;
+  position: relative;
+  top: 6px;
 }
 .benefits article div:first-child {
   margin-bottom: 40px;
+}
+
+/********************
+warranty
+********************/
+.warranty {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/********************
+activities
+********************/
+.activities {
+  padding: 70px 0;
+  text-align: center;
+}
+.activities h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+.activities .slider .item img {
+  width: 375px;
+  border-radius: 60px;
+  margin: 0 auto 50px auto;
+}
+.activities .slider .item a {
+  text-decoration: none;
+}
+.activities .slider .item a h3 {
+  font-size: 18px;
+  color: #59B7B4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.activities .slider .item p {
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.5;
+  padding: 0 50px;
+  line-height: 25px;
+}
+.activities article:last-child {
+  text-align: center;
+  padding: 100px 0;
+}
+.activities article:last-child p {
+  color: #59B7B4;
+  font-weight: 700;
+  padding: 0 200px;
+}
+.activities article:last-child div {
+  margin-top: 50px;
+}
+.activities article:last-child div a:first-child {
+  background: #FFFFFF;
+  color: #59B7B4;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 43px;
+  border-radius: 35px;
+  margin-right: 80px;
+}
+.activities article:last-child div a:last-child {
+  background: #59B7B4;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 43px;
+  border-radius: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

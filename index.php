@@ -8,6 +8,9 @@
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Youth Hub</title>
 </head>
@@ -51,28 +54,7 @@
     <!-- impressions -->
     <section class="impressions container">
         <h2>Utisci korisnika prostora</h2>
-        <article>
-            <div>
-                <img src="img/people.jpg" alt="">
-                <h3>Milan Krstic</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
-            </div>
-            <div>
-                <img src="img/people.jpg" alt="">
-                <h3>Milica Petrovic</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
-            </div>
-            <div>
-                <img src="img/people.jpg" alt="">
-                <h3>Jelena Bobic</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
-            </div>
-            <div>
-                <img src="img/people.jpg" alt="">
-                <h3>Nikola Savic</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
-            </div>
-        </article>
+        <?php include "partials/impressions.php" ?>
     </section>
 
     <!-- benefits -->
@@ -125,6 +107,68 @@
             </div>
         </article>
     </section>
-    
+
+    <!-- warranty -->
+    <section class="warranty">
+        <article class="container">
+            <p>Nakon završenog volontiranja, dobićeš potvrdu o odrađenoj volonterskoj praksi koju možeš iskoristiti na budućim konkursima za poslove.</p>
+        </article>
+    </section>
+
+    <!-- activities -->
+    <section class="activities">
+        <h2>Aktivnosti</h2>
+        <article class="slider container">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="">
+                        <img src="img/slide1.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <h3>RADNI SASTANAK SAVEZA STUDENATA MEDICINSKOG FAKULTETA I MLADIH ZDRAVSTVENIH RADNIKA</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/slide2.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <h3>PROBE DRAMSKE SEKCIJE FILOZOFSKOG FAKULTETA</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/slide3.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <h3>PROJEKAT "(RE)STARTUJ USPEŠNO 3"</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
+                </div>
+                <div class="item">
+                    <a href="">
+                        <img src="img/slide4.jpg" alt="">
+                    </a>
+                    <a href="">
+                        <h3>RADNI SASTANAK SAVEZA STUDENATA MEDICINSKOG FAKULTETA I MLADIH ZDRAVSTVENIH RADNIKA</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
+                </div>
+            </div>
+        </article>
+        <article class="container">
+            <p>SADA TE POZIVAMO DA U ODELJKU "ZAKAŽI TERMIN" OBEZBEDIŠ NAŠ PROSTOR ZA SVOJE AKTIVNOSTI, A UKOLIKO SI ZAINTERESOVAN/A DA VOLONTIRAŠ U NAŠEM UDRUŽENJU, POPUNI PRIJAVNU FORMU U ODELJKU "VOLONTERSKA MREŽA".<br><br>ISKORISTI MOGUĆNOSTI KOJE SU TI NA RASPOLAGANJU I BUDI DEO NAŠE PRIČE!</p>
+            <div>
+                <a href="">VOLONTERSKA MREŽA</a>
+                <a href="">ZAKAŽI TERMIN</a>
+            </div>
+        </article>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

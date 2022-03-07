@@ -16,6 +16,9 @@ basics
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 1.5rem;
     font-family: $fontFamily;
@@ -34,6 +37,9 @@ img {
 }
 li {
     list-style: none;
+}
+a {
+    text-decoration: none;
 }
 
 /********************
@@ -193,8 +199,8 @@ benefits
             li {
                 color: $accents;
                 margin-bottom: 20px;
-                font-size: 1rem;
-                font-weight: 700;
+                font-size: 25px;
+                font-weight: 500;
                 &::before {
                     content: "";
                     height: 10px;
@@ -205,11 +211,93 @@ benefits
                     display: inline-block;
                     margin-right: 20px;
                     line-height: 8px;
+                    position: relative;
+                    top: 6px;
                 }
             }
         }
         div:first-child {
             margin-bottom: 40px;
+        }
+    }
+}
+
+/********************
+warranty
+********************/
+.warranty {
+    @extend .accents;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+/********************
+activities
+********************/
+.activities {
+    padding: 70px 0;
+    text-align: center;
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 50px;
+    }
+    .slider {
+        .item {
+            //margin-right: 50px;
+            img {
+                width: 375px;
+                border-radius: 60px;
+                margin: 0 auto 50px auto;
+            }
+            a {
+                text-decoration: none;
+                h3 {
+                    font-size: 18px;
+                    color: $accents;
+                    text-transform: uppercase;
+                    margin-bottom: 25px;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                font-style: italic;
+                opacity: 0.5;
+                padding: 0 50px;
+                line-height: 25px;
+            }
+        }
+    }
+    article:last-child  {
+        text-align: center;
+        padding: 100px 0;
+        p {
+            color: $accents;
+            font-weight: 700;
+            padding: 0 200px;
+        }
+        div {
+            margin-top: 50px;
+            a:first-child {
+                background: $white;
+                color: $accents;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 10px 43px;
+                border-radius: 35px;
+                margin-right: 80px;
+            }
+            a:last-child {
+                background: $accents;
+                color: $white;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 10px 43px;
+                border-radius: 35px;
+            }
         }
     }
 }
